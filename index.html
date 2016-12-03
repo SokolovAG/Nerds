@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-
+<!--LOGOS-->
   <div class="banners">
     <div class="container">
       <div class="logo">
@@ -138,7 +138,7 @@
       </div>
     </div>
   </div>
-
+<!--FOOTER-->
   <footer class="page-footer">
     <div class="contacts">
       <div class="yandex-map"></div>
@@ -154,9 +154,9 @@
     <div class="social">
       <div class="container">
         <div class="social-btns">
-          <a class="social-btn  social-btn-vk" href="#"><i class="icon-vk"></i>Вконтакте</a>
-          <a class="social-btn  social-btn-f" href="#"><i class="icon-facebook"></i>Фейсбук</a>
-          <a class="social-btn  social-btn-inst" href="#"><i class="icon-instagramm"></i>Инстаграм</a>
+          <a class="social-btn  social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn  social-btn-f" href="#">Фейсбук</a>
+          <a class="social-btn  social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="friends">
           <div class="title-h1">Давайте дружить, это выгодно!</div>
@@ -165,6 +165,24 @@
       </div>
     </div>
   </footer>
+<!--form-->
+<div class="modal-content">
+    <div class="modal-content-close">Закрыть</div>
+    <form class="form-letter" action="/echo" method="post">
+      <div class="column1">
+        <label for="name">Ваше имя:</label>
+        <input id="name" name="name" type="text" placeholder="Представьтесь, пожалуйста" required>
+      </div>
+      <div class="column2">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" name="email" type="email" placeholder="Для отправки ответа" required>
+      </div>
+      <label for="letter-text">Текст письма:</label>
+      <textarea id="letter-text" name="letter-text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+      <button class="submit-btn" type="submit">Отправить</button>
+      <a class="btn-close close-letter">Отмена</a>
+    </form>
+  </div>
 
 </body>
 </html>
